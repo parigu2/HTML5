@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 practice</title>
+    <link rel="stylesheet" href="draw.css">
+</head>
+<body onload="startWorker()">
+    <h1 id="shadow">Design page</h1>
+    <nav>
+        <a href="index.html">Main</a>
+        <a href="ajax.html">Server</a>
+        <a href="draw.html">Design</a>
+    </nav>
+    <div style="display: flex;">
+        <div style="margin: 15px; width: 60%">
+            <section>
+                <h1>section tag</h1>
+                <p>note pad</p>
+                <video id="video1" width="320" autoplay controls>
+                    <!-- document.getElemenyById("video1") -->
+                    <!-- hidden, width, loop (start over again), poster (specifies an image while downloading), currentTime (start point)-->
+                    <source src="SampleVideo_1280x720_10mb.mp4" type="video/mp4">
+                        <!-- track tag specifies text tracks for media elements -->
+                </video>
+                <!-- pause(), play(), load() [re-load], canPlayType() [checks if the beowser can play], addTextTrack() -->
+            </section>
+            <article>
+                <h3>article tag</h3>
+                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                    <input type="range" id="a" value="50">100
+                    +<input type="number" id="b" value="50">
+                    =<output name="x" for="a b"></output>
+                </form>
+                <br><br>
+                <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <br>
+                <img id="drag1" src="logo.svg" draggable="true" ondragstart="drag(event)" width="339" height="69">
+                <br><br>
+                <video id="record" autoplay></video>
+                <img id="snapshot" src="">
+                <canvas id="snapshot" style="display:none;"></canvas>
+                <button id="takeVideo">Capture Video</button>
+                <button id="takePhoto">Screenshot</button>
+                <button id="applyCSS">Apply CSS</button>
+                <br><br>
+                <div id="tracker"></div>
+                <canvas id="pointer" width="640" height="360">Your browser does not support HTML5 canvas</canvas>
+                <br><br>
+                <canvas id="stockGraph" width="150" height="150">
+                    current stock price: $3.15 + 0.15
+                </canvas>
+                <canvas id="scrap" width="150" height="150">
+                    practice
+                </canvas>
+                <canvas id="scrap1" width="150" height="150">
+                    practice
+                </canvas>
+                <canvas id="scrap2" width="150" height="150">
+                    practice
+                </canvas>
+                <canvas id="scrap3" width="150" height="150">
+                    practice
+                </canvas>
+                <canvas id="scrap4" width="150" height="150">
+                    practice
+                </canvas>
+                <canvas id="scrap5" width="150" height="150">
+                    practice
+                </canvas>
+                <canvas id="scrap6" width="300" height="100">
+                    practice
+                </canvas>
+                <canvas id="scrap7" width="180" height="130">
+                    practice
+                </canvas>
+                <canvas id="scrap8" width="300" height="300">
+                    practice
+                </canvas>
+                <canvas id="scrap9" width="300" height="300">
+                    practice
+                </canvas>
+            </article>
+        </div>
+        <aside style="margin: auto;">
+            <h4>aside tag</h4>
+            <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+            <p>Count number: <output id="result"></output></p>
+            <button onclick="startWorker()">START</button>
+            <button onclick="stopWorker()">STOP</button>
+        </aside>
+    </div>
+    <footer style="background-color: rgb(194, 194, 194);">
+        <p>Posted by: Hege Refsnes</p>
+        <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+    </footer>
+</body>
+    <script type='text/javascript' src='function.js'></script>
+    <script type='text/javascript' src='drag.js'></script>
+    <script type='text/javascript' src='pointer.js'></script>
+    <script type='text/javascript' src='video.js'></script>
+    <script type='text/javascript' src='canvasBasic.js'></script>
+</html>

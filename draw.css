@@ -1,0 +1,66 @@
+#drop1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+canvas {
+    /* display: block; */
+    border: 1px solid black;
+}
+
+.grayscale {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.sepia {
+    filter: sepia(1);
+    -webkit-filter: sepia(1);
+}
+
+.blur {
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+}
+
+.brightness {
+    filter: brightness(2.5);
+    -webkit-filter: brightness(2.5);
+}
+
+.contrast {
+    filter: contrast(5);
+    -webkit-filter: contrast(5);
+}
+
+.hue-rotate {
+    filter: hue-rotate(90deg);
+    -webkit-filter: hue-rotate(90deg);
+}
+
+
+.hue-rotate2 {
+    filter: hue-rotate(180deg);
+    -webkit-filter: hue-rotate(180deg);
+}
+
+.hue-rotate3 {
+    filter: hue-rotate(270deg);
+    -webkit-filter: hue-rotate(270deg);
+}
+
+.saturate {
+    filter: saturate(3);
+    -webkit-filter: saturate(3);
+}
+
+.invert {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+#shadow {
+    text-shadow: 72pt 0em 5px;
+}

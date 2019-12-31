@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 practice</title>
+    <style>
+        .online {
+            background: green;
+        }
+
+        .offline {
+            background: red;
+        }
+    </style>
+    <script
+    src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyBwmv5dzkZNIMuIQdsMWn1aPA4NPpjKVuk"
+    type="text/javascript"></script>
+</head>
+<body onload="startWorker()">
+    <h1>Server page</h1>
+    <nav>
+        <a href="index.html">Main</a>
+        <a href="ajax.html">Server</a>
+        <a href="draw.html">Design</a>
+    </nav>
+    <div style="display: flex;">
+        <div style="margin: 15px; width: 60%">
+            <section>
+                <h1>section tag</h1>
+                <p>note pad</p>
+            </section>
+            <article>
+                <h3>article tag</h3>
+                <button>Web Socket Open</button>
+                <button>Web Socket Close</button>
+                <br><br>
+                <div id="status"></div>
+                <div id="log"></div>
+                <p>Online & Offline test</p>
+                <br><br>
+                <button onclick="getLocation()">Get location</button>
+                <br>
+                <div id="location"></div>
+                <a id="locationMap" target="_blank"></a>
+                <br>
+                <button onclick="initialize()">G MAP</button>
+                <div id="map_canvas" style="width: 500px; height: 300px"></div>
+            </article>
+        </div>
+        <aside style="margin: auto;">
+            <h4>aside tag</h4>
+            <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+            <p>Count number: <output id="result"></output></p>
+            <button onclick="startWorker()">START</button>
+            <button onclick="stopWorker()">STOP</button>
+        </aside>
+    </div>
+    <footer style="background-color: rgb(194, 194, 194);">
+        <p>Posted by: Hege Refsnes</p>
+        <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+    </footer>
+</body>
+    <script type='text/javascript' src='function.js'></script>
+    <script type='text/javascript' src='websocket.js'></script>
+    <script type='text/javascript' src='online.js'></script>
+    <script type='text/javascript' src='geolocation.js'></script>
+</html>

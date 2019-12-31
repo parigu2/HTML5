@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h4 {
+            color: powderblue;
+        }
+
+        .headline {
+            color: red;
+        }
+
+        article {
+            color: black;
+            font-style: normal;
+        }
+
+        aside h4 {
+            font-style: italic !important;
+            color: yellow;
+        }
+
+        article h4 {
+            font-style: normal;
+            color: sienna;
+        }
+
+        #news li:first-child {
+            background-color: blue
+        }
+
+        table {
+            border: 1px solid black;
+            font-family: Arial;
+        }
+
+        tr:nth-child(odd) {
+            background-color: red;
+        }
+
+        tr td:nth-of-type(even) {
+            background-color: blue;
+        }
+    </style>
+</html>
+<body>
+    <div>
+        <h4>International News</h4>
+        <article>
+            <h4 class="headline">New Developments!</h4>
+            <aside>
+                <h4>Impact On Markets</h4>
+            </aside>
+            <ul style="display: inline-flex">
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+            <ul id="news">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ul>
+        </article>
+        <table>
+            <tr>
+                <th>Fruit</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Apples</td>
+                <td>48</td>
+                <td>$0.29</td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td>72</td>
+                <td>$0.19</td>
+            </tr>
+            <tr>
+                <td>Watermelon</td>
+                <td>14</td>
+                <td>$3.99</td>
+            </tr>
+        </table>
+        <input type="text" onchange="check(value)" />
+        <div id="footer"></div>
+    </div>
+</body>
+<script>
+    function check(input) {
+        console.log(input)
+        return false
+    }
+</script>
